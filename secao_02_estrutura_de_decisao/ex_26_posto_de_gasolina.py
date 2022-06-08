@@ -30,7 +30,7 @@ Mostre o restultado com duas casas decimais
     >>> calcular_abastecimento(30, 'G')
     '30 litro(s) de gasolina custa(m): R$ 75.00. Com 6% de desconto, fica R$ 70.50'
 
-"""
+""" 
 
 
 def calcular_abastecimento(litros_de_combustivel: float, tipo_de_combustivel: str) -> str:
