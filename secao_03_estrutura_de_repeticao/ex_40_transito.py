@@ -28,3 +28,9 @@ Mostre os valores com uma casa decimail
 
 def calcular_estatisticas(*cidades):
     """Escreva aqui em baixo a sua solução"""
+    nome_cidade, n_carros, acidentes = zip(*cidades)
+    lista_cd_cidade = list(nome_cidade)
+    lista_veiculos = list(n_carros)
+    lista_acidentes = list(acidentes)
+    for i in range()
+    print(f'O maior índice de acidentes é de {}, com {} acidentes por mil habitantes.')
