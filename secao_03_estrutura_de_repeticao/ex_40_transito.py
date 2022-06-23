@@ -33,4 +33,4 @@ def calcular_estatisticas(*cidades):
     lista_veiculos = list(n_carros)
     lista_acidentes = list(acidentes)
     for i in range()
-    print(f'O maior índice de acidentes é de {}, com {} acidentes por mil habitantes.')
+    print(f'O maior índice de acidentes é de {}, com {} acidentes por mil carros.')
