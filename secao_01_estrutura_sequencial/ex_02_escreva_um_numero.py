@@ -11,6 +11,11 @@ Faça um Programa que peça um número e então mostre a mensagem O número info
 
 """
 
+from imp import is_frozen_package
+
+
 def escreva_um_numero():
     """Escreva aqui em baixo a sua solução"""
 
+    numero = int(input("Digite um número: "));
+    print("O número informado foi", numero)

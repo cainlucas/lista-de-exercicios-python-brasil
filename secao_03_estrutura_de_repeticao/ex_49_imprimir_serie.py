@@ -3,11 +3,11 @@ Exercício 49 da seção de estrutura sequencial da Python Brasil:
 https://wiki.python.org.br/EstruturaDeRepeticao
 
 Faça um programa que mostre os n termos da Série a seguir:
-    
-    S = 1/1 + 2/3 + 3/5 + 4/7 + 5/9 + ... + n/m. 
-    
+
+    S = 1/1 + 2/3 + 3/5 + 4/7 + 5/9 + ... + n/m.
+
     Imprima no final a soma da série.
-    
+
     ----------------------------------
     | EXEMPLO                         |
     ----------------------------------
@@ -17,7 +17,7 @@ Faça um programa que mostre os n termos da Série a seguir:
     | S = 1/1 + 2/3 + 3/5 + 4/7 + 5/9 |
     | soma = 3.393650793650793        |
     ----------------------------------
-    
+
 
     >>> imprimir_serie(5)
     S = 1/1 + 2/3 + 3/5 + 4/7 + 5/9
@@ -35,5 +35,21 @@ Faça um programa que mostre os n termos da Série a seguir:
 """
 
 
+
 def imprimir_serie(n):
     """Escreva aqui em baixo a sua solução"""
+    numerador = 1
+    denominador = 1
+    soma = 0
+    print('S =', end=' ')
+    while n > 0:
+        if n == 1:
+            print(f'{numerador}/{denominador}')
+        else:
+            print(f'{numerador}/{denominador} +', end=' ')
+        valor = numerador/denominador
+        soma+= valor
+        numerador+=1
+        denominador+=2
+        n-=1
+    print(f'soma = {soma}')
